@@ -1,13 +1,12 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useContext, useEffect, useMemo, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef } from "react";
 import "./home.css";
 import Cloud from "../../assets/Cloud";
 import { assets } from "../../assets";
 import ReactEcharts from "echarts-for-react";
 import Dropdown from "../../components/Dropdown";
 import { AppContext } from "../../hook/useApp";
-import { filterHourlyData, formatDate } from "../../utils";
-import { time } from "echarts";
+import { formatDate } from "../../utils";
 
 const Home = () => {
   const { graphData, gloading, getWeatherData, lastFiveHourData, weatherData } =
@@ -130,7 +129,7 @@ const Home = () => {
         <div className="weather-section">
           {lastFiveHourData.map((data, i) => {
             return (
-              <>
+              <React.Fragment key={i}>
                 <div className="temp">
                   <span>{data.time}</span>
 
@@ -139,7 +138,7 @@ const Home = () => {
                   <span>22</span>
                 </div>
                 {i === 0 && <div className="line"></div>}
-              </>
+              </React.Fragment>
             );
           })}
         </div>

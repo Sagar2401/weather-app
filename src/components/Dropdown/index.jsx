@@ -23,12 +23,13 @@ const Dropdown = () => {
 
     setOpen(false);
   };
-  
-  useEffect(() => {
-         getGraphData(0);
 
-  }, [])
-  
+  useEffect(() => {
+    getGraphData(0);
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <div className="dropdown">
       <div className="dropdown-header" onClick={toggleDropdown}>

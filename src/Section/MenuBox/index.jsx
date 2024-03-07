@@ -2,8 +2,6 @@ import React, { useContext } from "react";
 import "./menubox.css";
 import { assets } from "../../assets";
 import { AppContext } from "../../hook/useApp";
-import Menu from "../../assets/menu";
-import Search from "../../assets/Search";
 import Close from "../../assets/Close";
 import Location from "../../assets/Location";
 const MenuBox = () => {

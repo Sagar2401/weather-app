@@ -42,7 +42,7 @@
     height: 30px;
     width: 80px;
     color: #057bff;
-    display: flex;
+    display: flex !important;
     align-items: center;
     position: relative;
   }

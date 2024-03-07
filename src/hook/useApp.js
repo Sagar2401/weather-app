@@ -42,7 +42,7 @@ export const AppProvider = ({ children }) => {
         const city = data.city;
         axios
           .get(
-            `http://api.weatherapi.com/v1/forecast.json?key=67fb92872d004b39a2a155237240703&q=${city}&aqi=yes`
+            `https://api.weatherapi.com/v1/forecast.json?key=67fb92872d004b39a2a155237240703&q=${city}&aqi=yes`
           )
           .then((response) => {
             // Handle successful response
@@ -59,7 +59,7 @@ export const AppProvider = ({ children }) => {
     } else {
       axios
         .get(
-          `http://api.weatherapi.com/v1/forecast.json?key=67fb92872d004b39a2a155237240703&q=delhi&aqi=yes`
+          `https://api.weatherapi.com/v1/forecast.json?key=67fb92872d004b39a2a155237240703&q=delhi&aqi=yes`
         )
         .then((response) => {
           // Handle successful response

@@ -8,7 +8,7 @@ import Header from "./components/Header";
 import { AppContext } from "./hook/useApp";
 
 function App() {
-  const { isOpenMenu, setIsOpenMenu } = useContext(AppContext);
+  const { setIsOpenMenu } = useContext(AppContext);
   return (
     <div className="App">
       <div className="Mobileview">

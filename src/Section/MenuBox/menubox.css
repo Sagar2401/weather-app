@@ -1,0 +1,51 @@
+.menuwrapper {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  z-index: 5;
+  background-size: cover;
+  flex-direction: column;
+}
+
+.red {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.11999999731779099px;
+  text-align: left;
+  padding: 8px 15px;
+  border-radius: 8px;
+  background-color: #ff2d55;
+  color: #fff;
+}
+
+.boxdetail {
+  padding: 12px 25px;
+  margin-top: 80px;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.11999999731779099px;
+  text-align: left;
+}
+.location {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 12px 12px;
+  width: fit-content;
+  border-radius: 8px;
+  background-color: rgba(36, 35, 35, 0.188);
+}
+.city {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0.44999998807907104px;
+  text-align: left;
+}

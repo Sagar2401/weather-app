@@ -1,0 +1,148 @@
+.wrapper {
+  display: flex;
+  padding: 20px 25px 0;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.city-section {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.city-section-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+  & .city {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0.25px;
+    text-align: left;
+  }
+  & .time {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0.00042187501094304025px;
+    text-align: left;
+  }
+  & .weather {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0.00042187501094304025px;
+    text-align: left;
+    display: flex;
+    gap: 3px;
+    height: 30px;
+    width: 80px;
+    color: #057bff;
+    align-items: center;
+    position: relative;
+  }
+}
+
+.city-section-right {
+  position: relative;
+}
+
+.live {
+  background-color: #ff2d55;
+  color: #fff;
+  position: absolute;
+  bottom: 12px;
+  right: 7px;
+  text-transform: capitalize;
+  border-radius: 12px;
+  padding: 3px 12px;
+}
+
+.weather-section {
+  padding: 15px 30px;
+  background-color: #003339;
+  border-radius: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  flex-direction: row;
+}
+
+.temp {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  font-weight: 700;
+  width: fit-content;
+  line-height: 15px;
+  align-items: center;
+  gap: 5px;
+  letter-spacing: 0.0003656249900814146px;
+  color: #fff;
+  text-align: center;
+
+  & span {
+    width: fit-content;
+  }
+}
+
+.line {
+  width: 6px;
+  height: 50px;
+  opacity: 0.1;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(169, 169, 171, 1) 70%
+  );
+}
+
+.additional {
+  border: 1px solid #d8d8d8;
+  border-left: none;
+  border-right: none;
+  padding: 23px 0;
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0.0005062500131316483px;
+  text-align: left;
+}
+.gray-title {
+  gap: 20px;
+  font-size: 13px;
+  color: #96969a;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0.0005062500131316483px;
+}
+.data-wrap {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.data {
+  flex-direction: column;
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chart-title-wrap {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  padding: 10px 20px 0;
+  justify-content: space-between;
+}

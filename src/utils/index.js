@@ -21,7 +21,7 @@ export function filterHourlyData(hourlyData) {
   // Filter the data for the current hour and the next 5 hours
   const filteredData = hourlyData?.filter((entry) => {
     const entryHour = new Date(entry.time).getHours();
-    return entryHour >= currentHour && entryHour < currentHour + 6;
+    return entryHour >= currentHour && entryHour < currentHour + 5;
   });
 
   return filteredData?.map((entry) => {
@@ -32,7 +32,6 @@ export function filterHourlyData(hourlyData) {
     };
   });
 }
-
 
 export function getCurrentDate() {
   const currentDate = new Date();

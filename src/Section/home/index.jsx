@@ -135,7 +135,7 @@ const Home = () => {
 
                   <Cloud color="white" />
 
-                  <span>22</span>
+                  <span>{data.temp}</span>
                 </div>
                 {i === 0 && <div className="line"></div>}
               </React.Fragment>
